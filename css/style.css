@@ -392,7 +392,7 @@ footer{
 /* --- Responsive --- */
 @media screen and (max-width: 992px) {
 	body{
-		padding: 0 72px;
+		padding: 0 30px;
 	}
 
 	.center{
@@ -432,8 +432,9 @@ footer{
 		flex: 1;
 	}
 
-	.section_main .main:last-child{
-		width: 100%;
+	.section_main .main{
+		width: 100% !important;
+		padding: 20px;
 	}
 
 	.section_main .main:last-child .card a{
@@ -443,22 +444,30 @@ footer{
 	.section_main .main:last-child .main_section{
 		display: flex;
 		flex-direction: row;
-		gap: 23px;
+		gap: 0;
+		justify-content: space-between;
 	}
 
 	.section_main .main:last-child .card{
-		width: 28.9%;
+		width: 32.33%;
+		height: 130px;
+	}
+
+	.section_main .main:last-child .card h3 {
+		font-size: 14px;
 	}
 
 	.section_main .main:last-child .card_thumb{
 		height: 100%;
-		min-width: 106px;
+		min-width: 80px;
+		width: 80px;
+		max-width: 80px;
 	}
 
 	.section_main .main:last-child .card_thumb img{
 		height: 100%;
-		min-width: 106px;
-		width: 106px;
+		min-width: 80px;
+		width: 80px;
 	}
 
 	.section_activity .card_thumb, .section_activity .card_thumb img{
@@ -565,8 +574,14 @@ footer{
 		width: 100%;
 	}
 
+	.section_main .main:last-child .card_thumb{
+		min-width: 137px;
+		width: 137px;
+		max-width: 137px;
+	}
+
 	.section_main .main:last-child .card_thumb img {
-		height: 147px;
+		width: 137px;
 	}
 
 	.section_main .main:last-child{
@@ -582,6 +597,10 @@ footer{
 	.main:first-child .main_section {
 		flex-flow: nowrap;
 		flex-direction: column;
+	}
+
+	.section_main .main:last-child .main_section{
+		gap: 20px;
 	}
 
 	.card{
